@@ -3,10 +3,10 @@ body {
 }
 
 .weather-app {
-  background-color: aliceblue;
+  color: white;
   max-width: 80%;
   margin: 80px auto;
   padding: 50px;
   box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
-  font-family: "Inter", sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
