@@ -6,7 +6,7 @@ a {
 }
 .weather-app {
   color: white;
-  max-width: 80%;
+  max-width: 50%;
   margin: 80px auto;
   padding: 50px;
   box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
@@ -15,6 +15,10 @@ a {
 header {
   border-bottom: 1px solid rgba(140, 140, 140, 0.3);
   padding: 0 0 30px 0px;
+}
+.search-form {
+  display: block;
+  text-align: center;
 }
 .search-form-input {
   width: 80%;
@@ -35,7 +39,24 @@ main {
   padding-bottom: 0;
   padding-top: 30px;
 }
+.city-name {
+  font-size: 70px;
+}
 .weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app-degree {
+  font-size: 100px;
+}
+.weather-app-emoji {
+  font-size: 50px;
+}
+.weather-app-unit {
+  padding-top: 4px;
+  padding-left: 20px;
+}
+.weather-app-deco {
   display: flex;
   justify-content: space-between;
 }
