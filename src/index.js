@@ -7,6 +7,7 @@ function updateWeather(response) {
   let windElement = document.querySelector("#Wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icons");
 
   temperatureElement.innerHTML = Math.round(temperature);
 
@@ -15,6 +16,10 @@ function updateWeather(response) {
   windElement.innerHTML = response.data.wind.speed;
   descriptionElement.innerHTML = response.data.condition.description;
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img
+                        src="${response.data.condition.icon_url}"
+                        class="weather-app-emoji"
+                      />`;
 }
 function formatDate(date) {
   let min = date.getMinutes();
